@@ -14,13 +14,13 @@
 	<h1>Minedelve</h1>
 	<p>Welcome, enter in the mine</p>
 	<div>
-		<a href="/" class="discord" target="_blank">
+		<a href="https://discord.gg/fwyaGUhbav" class="discord" target="_blank">
 			<Icon icon="ic:baseline-discord" /> Join us Discord
 		</a>
-		<a href="/" class="github" target="_blank">
+		<a href="https://github.com/minedelve" class="github" target="_blank">
 			<Icon icon="mdi:github" /> View on GitHub
 		</a>
-		<a href="/" class="npm" target="_blank">
+		<a href="https://www.npmjs.com/org/minedelve" class="npm" target="_blank">
 			<Icon icon="gg:npm" /> We're on NPM
 		</a>
 	</div>
@@ -32,11 +32,11 @@
 	<h2>Explore the first project by Minedelve</h2>
 	<div class="mytril">
 		<img src={mytril} alt="mytril logo" />
-		<a href="/" class="name">Mytril</a>
+		<a href="https://mytril.dev" class="name" target="_blank">Mytril</a>
 	</div>
 	<p>A new interface framework for developing web applications with Svelte.</p>
 	<div>
-		<a href="/" class="website" target="_blank">
+		<a href="https://mytril.dev" class="website" target="_blank">
 			<Icon icon="pajamas:rocket-launch" />
 			Get started with Mytril
 			<Icon icon="ic:round-keyboard-arrow-right" />
@@ -56,13 +56,13 @@
 <footer>
 	<div>
 		<div class="link">
-			<a href="/" class="discord" target="_blank">
+			<a href="https://discord.gg/fwyaGUhbav" class="discord" target="_blank">
 				<Icon icon="ic:baseline-discord" />
 			</a>
-			<a href="/" class="github" target="_blank">
+			<a href="https://github.com/minedelve" class="github" target="_blank">
 				<Icon icon="mdi:github" />
 			</a>
-			<a href="/" class="npm" target="_blank">
+			<a href="https://www.npmjs.com/org/minedelve" class="npm" target="_blank">
 				<Icon icon="gg:npm" />
 			</a>
 		</div>
