@@ -47,6 +47,8 @@
 </script>
 
 <dialog bind:this={dialog}>
+	<!-- surcharge-dialog autofocus-action-element -->
+	<button type="button" class="close-dialog">close</button>
 	<div class="dialog-container">
 		<div class="card">
 			<div>
@@ -115,6 +117,13 @@
 	dialog .dialog-container > * {
 		max-height: calc(100% - 3rem);
 		margin: 0 auto;
+	}
+
+	dialog .close-dialog {
+		opacity: 0;
+		position: fixed;
+		top: 0;
+		z-index: -1;
 	}
 
 	.dialog-container > div {
