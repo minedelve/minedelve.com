@@ -47,8 +47,8 @@
 </script>
 
 <dialog bind:this={dialog}>
-	<div class="modal-container">
-		<div>
+	<div class="dialog-container">
+		<div class="card">
 			<div>
 				<p><strong>Minedelve respects your privacy</strong></p>
 				<button on:click={() => handleSetConsentMode('refuse')}>Decline all</button>
@@ -72,11 +72,11 @@
 		--backdrop: #0a0a0a;
 		border: 0;
 		padding: 0;
+		margin: auto;
 		width: 100%;
 		max-width: none;
 		background-color: transparent;
 		color: inherit;
-		margin: auto;
 	}
 
 	dialog::backdrop {
@@ -92,11 +92,13 @@
 		opacity: 1;
 	}
 
-	dialog .modal-container {
+	dialog .dialog-container {
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 		transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 		transition-duration: 0.2s;
+	}
 
+	dialog .card {
 		max-width: 500px;
 		max-height: calc(100% - 3rem);
 		margin: 0 auto;
@@ -110,12 +112,12 @@
 		text-align: start;
 	}
 
-	dialog .modal-container > * {
+	dialog .dialog-container > * {
 		max-height: calc(100% - 3rem);
 		margin: 0 auto;
 	}
 
-	.modal-container > div {
+	.dialog-container > div {
 		padding: 1.5rem;
 
 		& > div {
