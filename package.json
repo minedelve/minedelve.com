@@ -12,7 +12,9 @@
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
 		"test:integration": "playwright test",
-		"test:unit": "vitest"
+		"test:unit": "vitest",
+		"robots:dev": "cp static/robots.default.txt static/robots.txt",
+		"robots:prod": "cp static/robots.prod.txt static/robots.txt"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
