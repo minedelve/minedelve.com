@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { PUBLIC_PROD } from '$env/static/public';
+	import { page } from '$app/stores';
 	import '../app.css';
 
 	// fonts
@@ -24,7 +26,12 @@
 		name="description"
 		content="Minedelve use and participate in the evolution of the combines simplicity, personalisation and open source framework. Start using it now."
 	/>
-	<link rel="canonical" href="https://minedelve.com" />
+
+	<meta name="robots" content={PUBLIC_PROD === 'true' ? 'index,follow' : 'noindex,nofollow'} />
+	<link
+		rel="canonical"
+		href={`https://minedelve.com${$page.url.pathname === '/' ? '' : $page.url.pathname}`}
+	/>
 </svelte:head>
 
 <slot />

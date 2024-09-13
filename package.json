@@ -14,7 +14,8 @@
 		"test:integration": "playwright test",
 		"test:unit": "vitest",
 		"robots:dev": "cp static/robots.default.txt static/robots.txt",
-		"robots:prod": "cp static/robots.prod.txt static/robots.txt"
+		"robots:prod": "cp static/robots.prod.txt static/robots.txt",
+		"sitemap:prod": "cp static/sitemap.prod.xml static/sitemap.xml"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
